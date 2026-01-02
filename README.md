@@ -156,7 +156,8 @@ Pour contribuer au projet:
 Ce projet est à usage éducatif uniquement.
 
 ## 👥 Auteurs
-
+- Kpapou BANIGANTE firminapp@gmail.com
+- Profile [Linkdin](https://www.linkedin.com/in/kpapou-banigante-023988121/)
 - Projet développé dans le cadre du Master IA - DIT
 - Module: Data Collection
 
@@ -188,4 +189,6 @@ Fonctionnalités futures prévues:
 
 ---
 
-**Made with ❤️ and Python**
+
+**Made with ❤️ and Python by firminapp@gmail.com**
+follow on [Linkdin](https://www.linkedin.com/in/kpapou-banigante-023988121/)

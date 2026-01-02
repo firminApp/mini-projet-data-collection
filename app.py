@@ -15,10 +15,12 @@ st.set_page_config(
     page_icon="🚗",
     layout="wide",
     initial_sidebar_state="expanded"
+
 )
 
 # Titre principal
 st.title("🚗 Dakar Auto - Scraping & Analytics")
+st.subheader("TP Mini-Projet Data Collection realisé par Kpapou BANIGANTE (firminapp@gmail.com) [Linkdin](https://www.linkedin.com/in/kpapou-banigante-023988121/)")
 st.markdown("---")
 
 # Sidebar pour la navigation
