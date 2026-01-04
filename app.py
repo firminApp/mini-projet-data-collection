@@ -64,17 +64,17 @@ if page == "🏠 Accueil":
 
 # Import des autres pages (à créer)
 elif page == "🔍 Scraping":
-    from pages import scraping
+    from modules import scraping
     scraping.show()
 
 elif page == "📥 Téléchargement":
-    from pages import download
+    from modules import download
     download.show()
 
 elif page == "📊 Dashboard":
-    from pages import dashboard
+    from modules import dashboard
     dashboard.show()
 
 elif page == "📝 Évaluation":
-    from pages import evaluation
+    from modules import evaluation
     evaluation.show()

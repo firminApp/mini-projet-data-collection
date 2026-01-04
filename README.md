@@ -7,7 +7,7 @@ Application Streamlit pour le scraping et l'analyse des données de [dakar-auto.
 - **🔍 Scraping Interactif**: Scrapez des données sur plusieurs pages avec détection automatique du nombre de pages
 - **📥 Téléchargement**: Téléchargez les données brutes ou nettoyées au format CSV
 - **📊 Dashboard**: Visualisations interactives des données nettoyées (graphiques, statistiques, filtres)
-- **📝 Évaluation**: Formulaire d'évaluation de l'application intégré
+- **📝 Évaluation**: Formulaires d'évaluation via Google Forms et KoboToolbox
 
 ## 🛠️ Installation
 
@@ -39,15 +39,14 @@ mini projet/
 ├── utils/
 │   ├── __init__.py
 │   └── scraper.py             # Fonctions de scraping
-├── pages/
+├── modules/
 │   ├── __init__.py
 │   ├── scraping.py            # Page de scraping
 │   ├── download.py            # Page de téléchargement
 │   ├── dashboard.py           # Page du dashboard
 │   └── evaluation.py          # Page d'évaluation
 ├── data_dakar_auto/           # Données nettoyées (créé automatiquement)
-├── data_dakar_auto_brutes/    # Données brutes (créé automatiquement)
-└── evaluations/               # Évaluations sauvegardées (créé automatiquement)
+└── data_dakar_auto_brutes/    # Données brutes (créé automatiquement)
 ```
 
 ## 📊 Sources de données
@@ -90,8 +89,9 @@ L'application scrape les données depuis trois catégories de dakar-auto.com:
 ### 4. Évaluation de l'application
 
 1. Accédez à la page "📝 Évaluation"
-2. Remplissez le formulaire intégré ou Google Forms
-3. Soumettez votre évaluation
+2. Choisissez entre Google Forms ou KoboToolbox
+3. Remplissez le formulaire en ligne
+4. Soumettez votre évaluation
 
 ## 🔧 Configuration
 
@@ -104,7 +104,7 @@ Modifiez `utils/scraper.py` pour:
 
 ### Personnalisation du dashboard
 
-Modifiez `pages/dashboard.py` pour:
+Modifiez `modules/dashboard.py` pour:
 - Ajouter de nouveaux graphiques
 - Modifier les couleurs et thèmes
 - Créer des analyses personnalisées
