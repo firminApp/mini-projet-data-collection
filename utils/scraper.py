@@ -30,14 +30,26 @@ def get_total_pages(base_url: str) -> int:
     if not soup:
         return 1
     
-    paginator = soup.find('nav', class_='paginator')
-    if paginator:
-        last_page_link = paginator.find('a', title=re.compile(r'dernière page', re.I))
-        if last_page_link and 'href' in last_page_link.attrs:
-            href = last_page_link['href']
-            match = re.search(r'page=(\d+)', href)
-            if match:
-                return int(match.group(1))
+    try:
+        paginator = soup.find('nav', class_='paginator')
+        if paginator:
+            # Trouver tous les liens de pagination
+            page_links = paginator.find_all('a', class_='page-link')
+            max_page = 1
+            
+            for link in page_links:
+                # Extraire le numéro de page de l'URL
+                href = link.get('href', '')
+                # Chercher tous les paramètres page= dans l'URL
+                matches = re.findall(r'page=(\d+)', href)
+                if matches:
+                    # Prendre le dernier paramètre page= (le vrai numéro)
+                    page_num = int(matches[-1])
+                    max_page = max(max_page, page_num)
+            
+            return max_page
+    except Exception as e:
+        print(f"Erreur lors de la détection du nombre de pages: {e}")
     
     return 1
 

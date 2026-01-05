@@ -20,7 +20,7 @@ st.set_page_config(
 
 # Titre principal
 st.title("🚗 Dakar Auto - Scraping & Analytics")
-st.subheader("TP Mini-Projet Data Collection realisé par Kpapou BANIGANTE (firminapp@gmail.com) [Linkdin](https://www.linkedin.com/in/kpapou-banigante-023988121/)")
+st.subheader("TP Mini-Projet Data Collection realisé par Kpapou BANIGANTE [Linkdin](https://www.linkedin.com/in/kpapou-banigante-023988121/)")
 st.markdown("---")
 
 # Sidebar pour la navigation
@@ -32,7 +32,7 @@ page = st.sidebar.radio(
 
 # Page d'accueil
 if page == "🏠 Accueil":
-    st.header("Bienvenue sur l'application Dakar Auto Scraper")
+    # st.header("Bienvenue sur l'application Dakar Auto Scraper")
     
     col1, col2, col3 = st.columns(3)
     
@@ -57,9 +57,9 @@ if page == "🏠 Accueil":
     - ✅ Formulaire d'évaluation de l'application
     
     ### Sources de données:
-    - 🚗 Voitures: https://www.dakar-auto.com/voitures-4
-    - 🏍️ Motos: https://www.dakar-auto.com/motos-and-scooters-3
-    - 🚙 Locations: https://www.dakar-auto.com/location-de-voitures-19
+    - 🚗 Voitures: https://www.dakar-auto.com/senegal/voitures-4
+    - 🏍️ Motos: https://www.dakar-auto.com/senegal/motos-and-scooters-3
+    - 🚙 Locations: https://www.dakar-auto.com/senegal/location-de-voitures-19
     """)
 
 # Import des autres pages (à créer)
